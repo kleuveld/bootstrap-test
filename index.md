@@ -4,8 +4,8 @@ title: RDM Pages
 ---
 
 #Pages
-{% for page in site.pages %}
-- {{ post.date | date_to_string }}: {{ page.title }}{{ page.url | relative_url }}, , by {{ post.author }}
+{% for rdmpage in site.pages %}
+- {{ rdmpage.date | date_to_string }}: {{ rdmpage.title }}{{ rdmpage.url | relative_url }}, , by {{ rdmpage.author }}
 {% endfor %}
 
 
