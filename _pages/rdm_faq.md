@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: FSS RDM FAQ
 author: Koen Leuveld
 date: 2022-07-29
