@@ -19,16 +19,17 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            RDM Documents
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            {% for doc in site.documents %}
+              <a class="dropdown-item" href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+            {% endfor %}            
+          </div>
+        </li>
       </ul>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Pages
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        {% for doc in site.documents %}
-          <a class="dropdown-item" href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
-        {% endfor %}
-      </div>
     </div>
   </div>
 </nav>
