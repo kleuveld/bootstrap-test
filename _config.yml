@@ -42,5 +42,5 @@ exclude:
   - update_boostrap.sh
 
 collections:
-  pages:
+  documents:
     output: true
